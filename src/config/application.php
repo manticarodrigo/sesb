@@ -123,5 +123,3 @@ Config::apply();
 if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
 }
-
-define('WP_CACHE', true); // Added by WP Rocket

@@ -19,7 +19,7 @@ web/.htaccess
 /vendor
 
 # WP-CLI
-wp-cli.test.yml
+wp-cli.local.yml
 
 # Premium Plugins
 !web/app/plugins/advanced-custom-fields-pro
