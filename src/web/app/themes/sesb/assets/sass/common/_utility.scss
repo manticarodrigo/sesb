@@ -1,0 +1,46 @@
+.u-margin-hug {
+  margin: 0;
+
+  &--top {
+    margin-top: 0;
+  }
+}
+
+.u-padding {
+  padding: 20px;
+
+  &--lg {
+    padding: 60px;
+  }
+}
+
+.u-fullwidth {
+  width: 100%;
+}
+
+.u-color {
+
+  &-primary {
+    color: $color-primary;
+  }
+
+  &-secondary {
+    color: $color-secondary;
+  }
+}
+
+.u-bg-color {
+
+  &-primary {
+    background-color: #084ca1;
+  }
+}
+
+.u-text-lg {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.u-text-center {
+  text-align: center;
+}

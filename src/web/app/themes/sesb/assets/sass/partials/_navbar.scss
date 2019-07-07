@@ -1,0 +1,33 @@
+.navbar {
+  position: relative;
+
+  &__list {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+
+    li {
+      margin: 0 10px 0 0;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+  }
+}

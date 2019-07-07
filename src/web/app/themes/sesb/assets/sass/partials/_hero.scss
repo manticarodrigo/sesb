@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-size: cover;
+
+  &__title {
+    color: #fff;
+    font-size: 75px;
+    margin-top: 60px;
+    text-shadow: 0 0 10px #000;
+    text-align: center;
+  }
+}

@@ -1,0 +1,2 @@
+//Require scripts
+require('./scripts')
