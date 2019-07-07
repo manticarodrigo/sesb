@@ -27,5 +27,5 @@
           </li>
         </ul>
       </nav>
-      <img src="./assets/logo.jpg">
+      <img src="/app/themes/sesb/assets/jpg/logo.jpg">
     </header>
