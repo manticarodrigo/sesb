@@ -62,7 +62,7 @@ function register_blocks() {
     acf_register_block( array(
       'name'			=> 'Two Column two',
       'title'			=> __( 'Two Column two', 'two-column two' ),
-      'render_template'	=> 'template_parts/two-column.php',
+      'render_template'	=> 'template_parts/two-column2.php',
       'category'		=> 'formatting',
       'icon'			=> 'universal-access',
       'mode'			=> 'preview',
