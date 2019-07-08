@@ -58,6 +58,16 @@ function register_blocks() {
 		'mode'			=> 'preview',
 		'keywords'		=> array( 'layout' )
     ));
+    // Register Two Column block Two
+    acf_register_block( array(
+      'name'			=> 'Two Column two',
+      'title'			=> __( 'Two Column two', 'two-column two' ),
+      'render_template'	=> 'template_parts/two-column.php',
+      'category'		=> 'formatting',
+      'icon'			=> 'universal-access',
+      'mode'			=> 'preview',
+      'keywords'		=> array( 'layout' )
+      ));
     
 }
 add_action('acf/init', 'register_blocks' );
