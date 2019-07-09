@@ -9,8 +9,17 @@
 .u-padding {
   padding: 20px;
 
-  &--lg {
+  &-lg {
     padding: 60px;
+  }
+
+  &-top {
+    padding-top: 20px;
+
+    &-lg {
+      padding-top: 60px;
+
+    }
   }
 }
 
@@ -27,6 +36,10 @@
   &-secondary {
     color: $color-secondary;
   }
+
+  &-white {
+    color: $color-white
+  }
 }
 
 .u-bg-color {
@@ -39,9 +52,30 @@
 .u-text-lg {
   font-size: 40px;
   font-weight: 900;
-  color: FFF
 }
 
 .u-text-center {
   text-align: center;
+}
+
+.u-object-fit-contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+
+  &--md {
+    width: 500px;
+    height: 500px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.u-margin-auto {
+  margin: auto;
 }

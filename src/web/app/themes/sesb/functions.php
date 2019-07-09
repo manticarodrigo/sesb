@@ -58,6 +58,7 @@ function register_blocks() {
 		'mode'			=> 'preview',
 		'keywords'		=> array( 'layout' )
     ));
+
     // Register Two Column block Two
     acf_register_block( array(
       'name'			=> 'Two Column two',
@@ -68,7 +69,18 @@ function register_blocks() {
       'mode'			=> 'preview',
       'keywords'		=> array( 'layout' )
       ));
-    
+
+    // Register Partners Block
+    acf_register_block( array(
+      'name'			=> 'Partners',
+      'title'			=> __( 'Partners', 'Partners' ),
+      'render_template'	=> 'template_parts/partners.php',
+      'category'		=> 'formatting',
+      'icon'			=> 'universal-access',
+      'mode'			=> 'preview',
+      'keywords'		=> array( 'layout' )
+      ));
+      
 }
 add_action('acf/init', 'register_blocks' );
 
