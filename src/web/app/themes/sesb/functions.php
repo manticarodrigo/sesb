@@ -79,7 +79,18 @@ function register_blocks() {
       'icon'			=> 'universal-access',
       'mode'			=> 'preview',
       'keywords'		=> array( 'layout' )
-      ));
+    ));
+
+    // Register Flexible Content Block
+    acf_register_block( array(
+      'name'			=> 'Flexible Content',
+      'title'			=> __( 'Flexible Content', 'Flexible Content' ),
+      'render_template'	=> 'template_parts/flexible-content.php',
+      'category'		=> 'formatting',
+      'icon'			=> 'universal-access',
+      'mode'			=> 'preview',
+      'keywords'		=> array( 'layout' )
+    ));
       
 }
 add_action('acf/init', 'register_blocks' );
