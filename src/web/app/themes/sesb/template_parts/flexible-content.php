@@ -10,37 +10,31 @@ $bg_color = $is_alt_color ? ' u-bg-color-primary' : '';
 $headline_color = $is_alt_color ? 'secondary' : 'primary';
 $text_color = $is_alt_color ? ' u-color-white' : '';
 $btn_color = $is_alt_color ? ' btn--white' : '';
+
+function render_headline_and_image($headline_color, $headline_text, $image_url) {
+  echo <<<EOT
+<div class="u-padding-lg">
+  <h2 class="h1 u-margin-hug--top u-color-$headline_color">$headline_text</h2>
+  <img class="u-fullwidth" src="$image_url">
+</div>
+EOT;
+}
+
+function render_text_and_link($text_color, $text, $btn_color, $link_url, $link_text) {
+  echo <<<EOT
+<div class="u-padding-lg">
+  <p class="u-text-lg$text_color">$text</p>
+  <a class="btn$btn_color" href="$link_url">$link_text</a>
+</div>
+EOT;
+}
 ?>
 <section class="container-2col<?php echo $bg_color; ?>">
   <?php if ($alignment == 'left'): ?>
-    <div class="u-padding-lg">
-      <h2 class="h1 u-margin-hug--top u-color-<?php echo $headline_color; ?>">
-        <?php echo $headline; ?>
-      </h2>
-      <img class="u-fullwidth" src="<?php echo $image_url; ?>">
-    </div>
-    <div class="u-padding-lg">
-      <p class="u-text-lg<?php echo $text_color; ?>">
-        <?php echo $text; ?>
-      </p>
-      <a class="btn<?php echo $btn_color; ?>" href="<?php echo $link_url; ?>">
-        <?php echo $link_text; ?>
-      </a>
-    </div>
+    <?php render_headline_and_image($headline_color, $headline, $image_url); ?>
+    <?php render_text_and_link($text_color, $text, $btn_color, $link_url, $link_text); ?>
   <?php else: ?>
-    <div class="u-padding-lg">
-      <p class="u-text-lg<?php echo $text_color; ?>">
-        <?php echo $text; ?>
-      </p>
-      <a class="btn<?php echo $btn_color; ?>" href="<?php echo $link_url; ?>">
-        <?php echo $link_text; ?>
-      </a>
-    </div>
-    <div class="u-padding-lg">
-      <h2 class="h1 u-margin-hug--top u-color-<?php echo $headline_color; ?>">
-        <?php echo $headline; ?>
-      </h2>
-      <img class="u-fullwidth" src="<?php echo $image_url; ?>">
-    </div>
+    <?php render_text_and_link($text_color, $text, $btn_color, $link_url, $link_text); ?>
+    <?php render_headline_and_image($headline_color, $headline, $image_url); ?>
   <?php endif; ?>
 </section>
