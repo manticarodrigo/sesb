@@ -10,7 +10,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header class="u-padding u-bg-color-primary navbar">
+    <header class="u-padding navbar u-bg-color-primary");>
       <nav>
         <ul class="navbar__list">
           <li>

@@ -1,0 +1,36 @@
+.placesbgimg { 
+    min-width: 100%;
+    min-height:100%;
+  
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top:90px;
+  }
+.textbox{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: center;
+    margin:150px;
+    margin-top:0px;
+    min-height:100%;
+    margin-bottom: 0px;
+
+
+    
+    padding:40px;
+    text-align: center;
+  
+&-text{
+    font-weight: normal;
+    font-size:35px;
+    color:#fff;
+    }
+
+}
+.places_headline {
+  color: #fff;
+  font-size: 75px;
+  text-shadow: 0 0 10px #000;
+  text-align: center;
+}
