@@ -47,8 +47,9 @@
   &-primary {
     background-color: $color-primary;
   }
+
   &-primary-shaded {
-    background-color: rgba(8,76,161,0.9)
+    background-color: rgba(8,76,161,0.8)
   }
 }
 
@@ -67,6 +68,7 @@
   justify-content: center;
   width: 300px;
   height: 300px;
+  background-size:cover;
 
   &--md {
     width: 500px;
@@ -81,4 +83,14 @@
 
 .u-margin-auto {
   margin: auto;
+}
+
+.u-text-overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.u-list-unstyled {
+  list-style: none;
+  padding-left: 0;
 }

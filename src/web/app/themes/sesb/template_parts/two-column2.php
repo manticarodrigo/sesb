@@ -1,4 +1,4 @@
-<section class="container-2col">
+<section class="grid-2col">
     <div class="u-padding-lg u-bg-color-primary">
         <p class="u-text-lg u-color-white">
             <?php the_field('left_text'); ?>

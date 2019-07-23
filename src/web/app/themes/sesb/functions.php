@@ -7,6 +7,31 @@
 */
 
 /**
+ * General settings.
+ */
+
+add_theme_support( 'menus' );
+add_theme_support( 'align-wide' );
+
+/**
+ * Render site menus.
+ */
+
+function main_nav() {
+	$primary_nav = wp_get_nav_menu_items('main');
+
+	foreach ( $primary_nav as $nav_item ) {
+		echo '
+			<li>
+				<a class="u-color-secondary" href="' . $nav_item->url . '" title="' . $nav_item->title . '">'
+					. $nav_item->title .
+				'</a>
+			</li>
+		';
+	}
+}
+
+/**
  * Enqueue scripts and styles.
  */
 
@@ -79,6 +104,17 @@ function register_blocks() {
       'icon'			=> 'universal-access',
       'mode'			=> 'preview',
       'keywords'		=> array( 'layout' )
+	));
+
+    // Register History Block
+    acf_register_block( array(
+      'name'			=> 'History',
+      'title'			=> __( 'History', 'History' ),
+      'render_template'	=> 'template_parts/hist.php',
+      'category'		=> 'formatting',
+      'icon'			=> 'universal-access',
+      'mode'			=> 'preview',
+      'keywords'		=> array( 'layout' )
     ));
 
     // Register Flexible Content Block
@@ -94,8 +130,6 @@ function register_blocks() {
       
 }
 add_action('acf/init', 'register_blocks' );
-
-add_theme_support( 'align-wide' );
 
 // Register Place Post Type
 function place_post_type() {

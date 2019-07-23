@@ -10,22 +10,11 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header class="u-padding navbar u-bg-color-primary");>
+    <header class="u-padding header navbar u-bg-color-primary-shaded">
       <nav>
         <ul class="navbar__list">
-          <li>
-            <a class="u-color-secondary" href="https://google.com" target="_blank">Home</a>
-          </li>
-          <li>
-            <a class="u-color-secondary" href="#about">About</a>
-          </li>
-          <li>
-            <a class="u-color-secondary">Community</a>
-          </li>
-          <li>
-            <a class="u-color-secondary">Find a Home</a>
-          </li>
+          <?php main_nav(); ?>
         </ul>
       </nav>
-      <img src="/app/themes/sesb/assets/jpg/logo.jpg">
+      <img src="/app/themes/sesb/assets/jpg/logo.png">
     </header>

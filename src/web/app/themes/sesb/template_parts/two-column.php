@@ -1,4 +1,4 @@
-<section class="container-2col">
+<section class="grid-2col">
     <div class="u-padding-lg">
         <h2 class="h1 u-margin-hug--top u-color-primary">
             <?php the_field('left_headline'); ?>
